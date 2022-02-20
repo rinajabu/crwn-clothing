@@ -33,4 +33,8 @@
 .header .options .option {
   padding: 10px 15px;
 }
+
+.header .pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=header.styles.css.map */

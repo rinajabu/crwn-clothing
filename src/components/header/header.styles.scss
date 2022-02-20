@@ -19,7 +19,11 @@
         justify-content: flex-end;
 
         .option {
-        padding: 10px 15px;
+            padding: 10px 15px;
         }
+    }
+
+    .pointer {
+        cursor: pointer;
     }
 }
