@@ -35,7 +35,6 @@ class App extends React.Component {
             }
           })
         })
-        alert('Sign up successful! You will automatically be signed in.')
       } else {
         this.setState({ currentUser: userAuth })
       }

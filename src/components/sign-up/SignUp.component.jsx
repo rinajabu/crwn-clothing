@@ -33,6 +33,7 @@ class SignUp extends React.Component {
                 password: '',
                 confirmPassword: ''
             })
+            alert('Sign up successful! You will automatically be signed in.')
         } catch (error) {
             const errorCode = error.code;
             const errorMessage = error.message;
