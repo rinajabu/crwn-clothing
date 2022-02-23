@@ -20,7 +20,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      
+
       // if userAuth does not equal null, set the currentUser to the logged in user
       // else just set the current user to null (which the userAuth would be equal to if the user isn't in the db)
       if (userAuth) {
@@ -35,6 +35,7 @@ class App extends React.Component {
             }
           })
         })
+        alert('Sign up successful! You will automatically be signed in.')
       } else {
         this.setState({ currentUser: userAuth })
       }
