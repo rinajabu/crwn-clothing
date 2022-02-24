@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Steps to set up Redux
+
+1. install redux in application
+```
+npm i redux redux-logger react-redux
+```
+2. import Provider from react-redux in index.js and wrap whole application within it (see index.js)
+3. create 'redux' directory with root-reducer.js file (will hold all the reducers needed for the application with the combineReducers function from redux library; see root-reducer.js)
+4. create whatever other reducers you would need in separate folders (ie. users reducer, cart reducer, etc.; see user/user-reducer.js and root-reducer.js to see how to add to combinedReducers)
