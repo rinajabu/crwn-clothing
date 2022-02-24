@@ -79,3 +79,5 @@ npm i redux redux-logger react-redux
 2. import Provider from react-redux in index.js and wrap whole application within it (see index.js)
 3. create 'redux' directory with root-reducer.js file (will hold all the reducers needed for the application with the combineReducers function from redux library; see root-reducer.js)
 4. create whatever other reducers you would need in separate folders (ie. users reducer, cart reducer, etc.; see user/user-reducer.js and root-reducer.js to see how to add to combinedReducers)
+5. create actions.js to go with specific reducers files (see user directory for example), actions are the functions that will match the switch/case statements in the reducers
+6. create store.js file (see store.js for initilization), then pass store into Provider in index.js (see index.js)
